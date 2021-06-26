@@ -40,9 +40,9 @@ def predict():
         #output = round(prediction[0], 2)
         prediction_text=""
         if prediction==[1]:
-            return render_template("result.html", prediction_text='You have chance of diabetes')
+            return render_template("result.html", prediction_text='The patient is likely to have diabetes disease')
         else:
-           return render_template("result.html", prediction_text='Congratulations,You are safe')
+           return render_template("result.html", prediction_text='The patient is not likely to have diabetes disease')
 
 
 
